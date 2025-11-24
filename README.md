@@ -95,10 +95,6 @@ Preview the built version:
 npm run preview
 ```
 
-## 🔮 View in AI Studio
-
-Explore the original creation: [AI Studio App](https://ai.studio/apps/temp/1)
-
 ---
 
 <div align="center">
