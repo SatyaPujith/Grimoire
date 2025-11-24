@@ -7,7 +7,7 @@
   \_____|_|  \_\_____|_|  |_|\____/_____|_|  \_\______|
 ```
 
-# 🎃 The Kiroween Study Crypt 🦇
+# 🎃 GRIMOIRE - The Study Crypt 🦇
 
 > *"Enter if you dare... Knowledge awaits in the shadows"*
 
