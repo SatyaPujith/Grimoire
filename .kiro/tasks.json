@@ -1,0 +1,192 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Project Setup & Initial Structure",
+      "description": "Set up React + TypeScript project with Vite, configure Tailwind CSS, and create basic folder structure",
+      "status": "completed",
+      "priority": "high",
+      "createdAt": "2024-12-06T10:00:00Z",
+      "completedAt": "2024-12-06T10:30:00Z",
+      "tags": ["setup", "infrastructure"]
+    },
+    {
+      "id": "2",
+      "title": "Design Halloween Theme & Typography",
+      "description": "Add spooky fonts (Creepster, Nosifer, Crimson Text), create dark color scheme with purple/orange accents",
+      "status": "completed",
+      "priority": "high",
+      "createdAt": "2024-12-06T10:30:00Z",
+      "completedAt": "2024-12-06T11:00:00Z",
+      "tags": ["design", "ui"]
+    },
+    {
+      "id": "3",
+      "title": "Create Spooky Icon Components",
+      "description": "Design and implement custom SVG icons: Skull, Ghost, Spider Web, Bat, Pumpkin, Sword, Tombstone, Skeleton, Tree, Moon, Fence",
+      "status": "completed",
+      "priority": "medium",
+      "createdAt": "2024-12-06T11:00:00Z",
+      "completedAt": "2024-12-06T12:00:00Z",
+      "tags": ["components", "icons"]
+    },
+    {
+      "id": "4",
+      "title": "Integrate Google Gemini AI",
+      "description": "Set up Gemini AI service for curriculum generation and topic content creation with structured schemas",
+      "status": "completed",
+      "priority": "high",
+      "createdAt": "2024-12-06T12:00:00Z",
+      "completedAt": "2024-12-06T13:00:00Z",
+      "tags": ["ai", "backend"]
+    },
+    {
+      "id": "5",
+      "title": "Build Landing Page",
+      "description": "Create spooky landing page with graveyard scene, floating bats, tombstones, skeletons, and moon",
+      "status": "completed",
+      "priority": "high",
+      "createdAt": "2024-12-06T13:00:00Z",
+      "completedAt": "2024-12-06T14:00:00Z",
+      "tags": ["ui", "landing"]
+    },
+    {
+      "id": "6",
+      "title": "Implement Horizontal Scrollable Path",
+      "description": "Create Duolingo-style winding path with haunted towns as waypoints, smooth scrolling, and 3D effects",
+      "status": "completed",
+      "priority": "high",
+      "createdAt": "2024-12-06T14:00:00Z",
+      "completedAt": "2024-12-06T15:30:00Z",
+      "tags": ["ui", "curriculum"]
+    },
+    {
+      "id": "7",
+      "title": "Add Sequential Progression System",
+      "description": "Implement locked/unlocked levels, track completed topics, only allow current level access",
+      "status": "completed",
+      "priority": "high",
+      "createdAt": "2024-12-06T15:30:00Z",
+      "completedAt": "2024-12-06T16:00:00Z",
+      "tags": ["logic", "progression"]
+    },
+    {
+      "id": "8",
+      "title": "Create Battle Arena UI",
+      "description": "Design graveyard battle scene with ghost enemy, educational content display, and quiz interface",
+      "status": "completed",
+      "priority": "high",
+      "createdAt": "2024-12-06T16:00:00Z",
+      "completedAt": "2024-12-06T17:00:00Z",
+      "tags": ["ui", "battle"]
+    },
+    {
+      "id": "9",
+      "title": "Build 10-Second Battle Animation",
+      "description": "Create epic battle sequence: hero enters, ghost appears, clash, hero attacks, ghost defeated, victory",
+      "status": "completed",
+      "priority": "high",
+      "createdAt": "2024-12-06T17:00:00Z",
+      "completedAt": "2024-12-06T18:30:00Z",
+      "tags": ["animation", "battle"]
+    },
+    {
+      "id": "10",
+      "title": "Design Realistic Hero Character",
+      "description": "Create human warrior with realistic skin tone, face features, cloth tunic, and sword",
+      "status": "completed",
+      "priority": "medium",
+      "createdAt": "2024-12-06T18:30:00Z",
+      "completedAt": "2024-12-06T19:00:00Z",
+      "tags": ["design", "character"]
+    },
+    {
+      "id": "11",
+      "title": "Design Terrifying Black & White Ghost",
+      "description": "Create grayscale ghost with hollow black eyes, screaming mouth, and dark wispy trails",
+      "status": "completed",
+      "priority": "medium",
+      "createdAt": "2024-12-06T19:00:00Z",
+      "completedAt": "2024-12-06T19:30:00Z",
+      "tags": ["design", "character"]
+    },
+    {
+      "id": "12",
+      "title": "Implement Jump Scare System",
+      "description": "Add random ghost jump scares that rush towards user with video and scream sound",
+      "status": "completed",
+      "priority": "high",
+      "createdAt": "2024-12-06T19:30:00Z",
+      "completedAt": "2024-12-06T20:30:00Z",
+      "tags": ["feature", "scary"]
+    },
+    {
+      "id": "13",
+      "title": "Add Sound Effects & Music",
+      "description": "Integrate ambient scary music and ghost scream sounds for immersive experience",
+      "status": "completed",
+      "priority": "medium",
+      "createdAt": "2024-12-06T20:30:00Z",
+      "completedAt": "2024-12-06T21:00:00Z",
+      "tags": ["audio", "effects"]
+    },
+    {
+      "id": "14",
+      "title": "Implement Souls/Points System",
+      "description": "Track user progress with soul points, +10 for correct answers, -2 for wrong answers",
+      "status": "completed",
+      "priority": "medium",
+      "createdAt": "2024-12-06T21:00:00Z",
+      "completedAt": "2024-12-06T21:30:00Z",
+      "tags": ["logic", "gamification"]
+    },
+    {
+      "id": "15",
+      "title": "Add CSS Animations",
+      "description": "Create custom animations: float, shake, dissolve, jump scare, ghost rush, blood drip, glitch effects",
+      "status": "completed",
+      "priority": "medium",
+      "createdAt": "2024-12-06T21:30:00Z",
+      "completedAt": "2024-12-06T22:00:00Z",
+      "tags": ["css", "animation"]
+    },
+    {
+      "id": "16",
+      "title": "Optimize Performance",
+      "description": "Simplify parallax layers, reduce heavy animations, optimize rendering for smooth experience",
+      "status": "completed",
+      "priority": "high",
+      "createdAt": "2024-12-06T22:00:00Z",
+      "completedAt": "2024-12-06T22:30:00Z",
+      "tags": ["performance", "optimization"]
+    },
+    {
+      "id": "17",
+      "title": "Create Documentation",
+      "description": "Write README with setup instructions, features list, and deployment guide",
+      "status": "completed",
+      "priority": "low",
+      "createdAt": "2024-12-06T22:30:00Z",
+      "completedAt": "2024-12-06T23:00:00Z",
+      "tags": ["documentation"]
+    },
+    {
+      "id": "18",
+      "title": "Setup Environment Variables",
+      "description": "Configure Gemini API key and environment variables for deployment",
+      "status": "completed",
+      "priority": "high",
+      "createdAt": "2024-12-06T23:00:00Z",
+      "completedAt": "2024-12-06T23:15:00Z",
+      "tags": ["config", "deployment"]
+    }
+  ],
+  "metadata": {
+    "projectName": "Grimoire - Kiroween Study Crypt",
+    "totalTasks": 18,
+    "completedTasks": 18,
+    "inProgressTasks": 0,
+    "todoTasks": 0,
+    "lastUpdated": "2024-12-06T23:15:00Z"
+  }
+}

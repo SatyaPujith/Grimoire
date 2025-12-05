@@ -7,8 +7,33 @@ export const SkullIcon: React.FC<{ className?: string }> = ({ className }) => (
 );
 
 export const GhostIcon: React.FC<{ className?: string }> = ({ className }) => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={className}>
-        <path d="M12 2a9 9 0 00-9 9v7c0 1.66 1.34 3 3 3 1.66 0 3-1.34 3-3 1.66 0 3 1.34 3 3s3-1.34 3-3 1.66 0 3 1.34 3 3 1.66 0 3-1.34 3-3v-7a9 9 0 00-9-9zm-3 10a2 2 0 110-4 2 2 0 010 4zm6 0a2 2 0 110-4 2 2 0 010 4z" />
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 250" fill="currentColor" className={className}>
+        {/* Main ghost body with tattered edges */}
+        <path d="M100 20 C60 20 30 50 30 90 L30 180 C30 190 35 195 40 200 L45 210 L50 200 L55 210 L60 200 L65 210 L70 200 L75 210 L80 200 L85 210 L90 200 L95 210 L100 200 L105 210 L110 200 L115 210 L120 200 L125 210 L130 200 L135 210 L140 200 L145 210 L150 200 L155 210 L160 200 C165 195 170 190 170 180 L170 90 C170 50 140 20 100 20 Z" 
+              fill="currentColor" opacity="0.9" />
+        
+        {/* Darker inner shadow for depth */}
+        <ellipse cx="100" cy="120" rx="50" ry="70" fill="black" opacity="0.2" />
+        
+        {/* Creepy hollow eyes */}
+        <ellipse cx="75" cy="90" rx="12" ry="18" fill="black" />
+        <ellipse cx="125" cy="90" rx="12" ry="18" fill="black" />
+        
+        {/* Eye glow effect */}
+        <ellipse cx="75" cy="85" rx="6" ry="8" fill="#ff0000" opacity="0.8" />
+        <ellipse cx="125" cy="85" rx="6" ry="8" fill="#ff0000" opacity="0.8" />
+        
+        {/* Screaming mouth */}
+        <ellipse cx="100" cy="130" rx="15" ry="25" fill="black" />
+        <path d="M90 130 Q100 145 110 130" stroke="black" strokeWidth="3" fill="none" />
+        
+        {/* Wispy trails */}
+        <path d="M40 150 Q30 170 35 190" stroke="currentColor" strokeWidth="8" opacity="0.3" fill="none" />
+        <path d="M160 150 Q170 170 165 190" stroke="currentColor" strokeWidth="8" opacity="0.3" fill="none" />
+        
+        {/* Tattered cloth effect */}
+        <path d="M50 100 L45 120 L50 140" stroke="black" strokeWidth="2" opacity="0.4" fill="none" />
+        <path d="M150 100 L155 120 L150 140" stroke="black" strokeWidth="2" opacity="0.4" fill="none" />
     </svg>
 );
 
@@ -46,5 +71,113 @@ export const SwordIcon: React.FC<{ className?: string }> = ({ className }) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={className}>
         <path d="M14.5 17.5L3 6V3h3l11.5 11.5L21 11l3 3-5 5-1.5-1.5z" />
         <path d="M4 22l4-4" stroke="currentColor" strokeWidth="2" />
+    </svg>
+);
+
+export const ZombieHandIcon: React.FC<{ className?: string }> = ({ className }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={className}>
+        <path d="M9 2v6H7V2h2zm4 0v6h-2V2h2zm4 0v6h-2V2h2zM5 8h14v2H5V8zm0 4h14v2H5v-2zm2 4h10v6H7v-6z" />
+    </svg>
+);
+
+export const CoffinIcon: React.FC<{ className?: string }> = ({ className }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={className}>
+        <path d="M9 2l-2 4v16l5 2 5-2V6l-2-4H9zm1 2h4l1 2v14l-3 1-3-1V6l1-2z" />
+    </svg>
+);
+
+export const CandleIcon: React.FC<{ className?: string }> = ({ className }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={className}>
+        <ellipse cx="12" cy="4" rx="2" ry="3" opacity="0.6" />
+        <path d="M10 6h4v14h-4z" />
+        <rect x="8" y="20" width="8" height="2" rx="1" />
+    </svg>
+);
+
+
+export const TombstoneIcon: React.FC<{ className?: string }> = ({ className }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150" fill="currentColor" className={className}>
+        <rect x="20" y="40" width="60" height="100" rx="30" ry="30" fill="currentColor" />
+        <rect x="15" y="120" width="70" height="30" fill="currentColor" />
+        <path d="M35 60 L65 60 M50 50 L50 80" stroke="black" strokeWidth="4" opacity="0.3" />
+        <text x="50" y="105" fontSize="12" textAnchor="middle" fill="black" opacity="0.5">RIP</text>
+    </svg>
+);
+
+export const SkeletonIcon: React.FC<{ className?: string }> = ({ className }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 200" fill="currentColor" className={className}>
+        {/* Skull */}
+        <ellipse cx="50" cy="30" rx="20" ry="25" fill="currentColor" />
+        <ellipse cx="43" cy="28" rx="4" ry="6" fill="black" />
+        <ellipse cx="57" cy="28" rx="4" ry="6" fill="black" />
+        <path d="M45 38 L55 38 L50 42 Z" fill="black" />
+        <rect x="46" y="42" width="8" height="6" fill="black" />
+        
+        {/* Spine and ribs */}
+        <rect x="48" y="55" width="4" height="60" fill="currentColor" />
+        <ellipse cx="50" cy="70" rx="15" ry="8" fill="none" stroke="currentColor" strokeWidth="3" />
+        <ellipse cx="50" cy="80" rx="14" ry="7" fill="none" stroke="currentColor" strokeWidth="3" />
+        <ellipse cx="50" cy="90" rx="13" ry="6" fill="none" stroke="currentColor" strokeWidth="3" />
+        
+        {/* Arms */}
+        <rect x="25" y="65" width="20" height="4" fill="currentColor" transform="rotate(-20 35 67)" />
+        <rect x="55" y="65" width="20" height="4" fill="currentColor" transform="rotate(20 65 67)" />
+        
+        {/* Legs */}
+        <rect x="40" y="115" width="5" height="50" fill="currentColor" />
+        <rect x="55" y="115" width="5" height="50" fill="currentColor" />
+        <rect x="35" y="165" width="15" height="5" fill="currentColor" />
+        <rect x="50" y="165" width="15" height="5" fill="currentColor" />
+    </svg>
+);
+
+export const TreeIcon: React.FC<{ className?: string }> = ({ className }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150" fill="currentColor" className={className}>
+        {/* Dead tree trunk */}
+        <rect x="42" y="60" width="16" height="90" fill="currentColor" />
+        
+        {/* Twisted branches */}
+        <path d="M50 60 Q30 50 20 40 L15 35" stroke="currentColor" strokeWidth="4" fill="none" />
+        <path d="M50 60 Q70 50 80 40 L85 35" stroke="currentColor" strokeWidth="4" fill="none" />
+        <path d="M50 80 Q25 75 15 70" stroke="currentColor" strokeWidth="3" fill="none" />
+        <path d="M50 80 Q75 75 85 70" stroke="currentColor" strokeWidth="3" fill="none" />
+        <path d="M50 100 Q35 95 25 90" stroke="currentColor" strokeWidth="3" fill="none" />
+        
+        {/* Cracks in trunk */}
+        <path d="M45 70 L48 85" stroke="black" strokeWidth="1" opacity="0.5" />
+        <path d="M55 90 L52 105" stroke="black" strokeWidth="1" opacity="0.5" />
+    </svg>
+);
+
+export const MoonIcon: React.FC<{ className?: string }> = ({ className }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="currentColor" className={className}>
+        <circle cx="50" cy="50" r="40" fill="currentColor" />
+        <circle cx="60" cy="45" r="35" fill="black" />
+        {/* Craters */}
+        <circle cx="35" cy="40" r="5" fill="black" opacity="0.3" />
+        <circle cx="45" cy="55" r="3" fill="black" opacity="0.3" />
+        <circle cx="38" cy="60" r="4" fill="black" opacity="0.3" />
+    </svg>
+);
+
+export const FenceIcon: React.FC<{ className?: string }> = ({ className }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" fill="currentColor" className={className}>
+        {/* Broken fence posts */}
+        <rect x="10" y="40" width="8" height="50" fill="currentColor" transform="rotate(-5 14 65)" />
+        <rect x="50" y="35" width="8" height="55" fill="currentColor" />
+        <rect x="90" y="40" width="8" height="50" fill="currentColor" transform="rotate(5 94 65)" />
+        <rect x="130" y="38" width="8" height="52" fill="currentColor" transform="rotate(-3 134 64)" />
+        <rect x="170" y="40" width="8" height="50" fill="currentColor" />
+        
+        {/* Horizontal rails */}
+        <rect x="0" y="50" width="200" height="5" fill="currentColor" />
+        <rect x="0" y="70" width="200" height="5" fill="currentColor" />
+        
+        {/* Pointed tops */}
+        <polygon points="14,40 10,50 18,50" fill="currentColor" />
+        <polygon points="54,35 50,45 58,45" fill="currentColor" />
+        <polygon points="94,40 90,50 98,50" fill="currentColor" />
+        <polygon points="134,38 130,48 138,48" fill="currentColor" />
+        <polygon points="174,40 170,50 178,50" fill="currentColor" />
     </svg>
 );

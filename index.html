@@ -59,6 +59,167 @@
         .animate-dissolve {
             animation: dissolve 1s forwards;
         }
+
+        /* Jump Scare Ghost */
+        @keyframes jumpScare {
+            0% { transform: scale(0) rotate(0deg); opacity: 0; }
+            10% { transform: scale(3) rotate(10deg); opacity: 1; }
+            20% { transform: scale(2.5) rotate(-10deg); opacity: 1; }
+            100% { transform: scale(0) rotate(360deg); opacity: 0; }
+        }
+        .animate-jumpscare {
+            animation: jumpScare 1.5s cubic-bezier(.36,.07,.19,.97);
+        }
+
+        /* Battle Victory Animation */
+        @keyframes heroAttack {
+            0% { transform: translateX(-100vw) scale(0.5); opacity: 0; }
+            20% { transform: translateX(0) scale(1); opacity: 1; }
+            40% { transform: translateX(0) scale(1.1) rotate(10deg); }
+            60% { transform: translateX(0) scale(1) rotate(-5deg); }
+            80% { transform: translateX(0) scale(1.05); }
+            100% { transform: translateX(0) scale(1); opacity: 1; }
+        }
+        .animate-hero-attack {
+            animation: heroAttack 2s ease-out forwards;
+        }
+
+        @keyframes ghostDefeat {
+            0% { transform: scale(1) rotate(0deg); opacity: 1; filter: blur(0); }
+            30% { transform: scale(1.2) rotate(20deg); opacity: 0.8; filter: blur(2px); }
+            60% { transform: scale(0.8) rotate(-20deg); opacity: 0.5; filter: blur(5px); }
+            100% { transform: scale(0) rotate(360deg); opacity: 0; filter: blur(20px); }
+        }
+        .animate-ghost-defeat {
+            animation: ghostDefeat 3s ease-out forwards;
+        }
+
+        @keyframes explosionPulse {
+            0%, 100% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(2); opacity: 0.8; }
+        }
+        .animate-explosion {
+            animation: explosionPulse 1s ease-out;
+        }
+
+        /* Floating Ghosts Background */
+        @keyframes floatAcross {
+            0% { transform: translate(-100px, 0) scale(0.5); opacity: 0; }
+            10% { opacity: 0.3; }
+            90% { opacity: 0.3; }
+            100% { transform: translate(100vw, -50px) scale(0.8); opacity: 0; }
+        }
+        .animate-float-across {
+            animation: floatAcross 15s linear infinite;
+        }
+
+        /* Creepy Eye Blink */
+        @keyframes eyeBlink {
+            0%, 90%, 100% { opacity: 1; }
+            95% { opacity: 0; }
+        }
+        .animate-eye-blink {
+            animation: eyeBlink 4s infinite;
+        }
+
+        /* Blood Drip */
+        @keyframes bloodDrip {
+            0% { transform: translateY(-20px); opacity: 0; }
+            10% { opacity: 1; }
+            100% { transform: translateY(100vh); opacity: 0; }
+        }
+        .animate-blood-drip {
+            animation: bloodDrip 3s ease-in infinite;
+        }
+
+        /* Glitch Effect */
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+            100% { transform: translate(0); }
+        }
+        .animate-glitch {
+            animation: glitch 0.3s infinite;
+        }
+
+        /* Fog Movement */
+        @keyframes fogMove {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        .animate-fog {
+            animation: fogMove 30s linear infinite;
+        }
+
+        /* Custom Cursor */
+        * {
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(147, 51, 234)" stroke-width="2"><path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"/></svg>'), auto;
+        }
+        
+        button, a, input {
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgb(234, 88, 12)"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>'), pointer;
+        }
+
+        /* Vignette Effect */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.9);
+            z-index: 9999;
+        }
+
+        /* Flickering Light Effect */
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            41.99% { opacity: 1; }
+            42% { opacity: 0.8; }
+            43% { opacity: 1; }
+            45.99% { opacity: 1; }
+            46% { opacity: 0.6; }
+            46.5% { opacity: 1; }
+        }
+        .flicker {
+            animation: flicker 5s infinite;
+        }
+
+        /* Shimmer Effect */
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        .animate-shimmer {
+            animation: shimmer 2s infinite;
+        }
+
+        /* 3D Parallax Scrolling */
+        .parallax-container {
+            perspective: 1000px;
+            perspective-origin: 50% 50%;
+        }
+
+        /* Horizontal scroll with momentum */
+        ::-webkit-scrollbar:horizontal {
+            height: 12px;
+        }
+        ::-webkit-scrollbar-track:horizontal {
+            background: #1a0b2e;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:horizontal {
+            background: linear-gradient(90deg, #4c1d95, #d97706);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:horizontal:hover {
+            background: linear-gradient(90deg, #7c3aed, #f97316);
+        }
     </style>
   <script type="importmap">
 {
