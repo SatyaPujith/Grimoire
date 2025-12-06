@@ -1,0 +1,37 @@
+{
+  "name": "grimoire-kiroween-study-crypt",
+  "displayName": "Grimoire: The Kiroween Study Crypt",
+  "version": "1.0.0",
+  "description": "A haunted educational experience where learning meets the supernatural. Battle knowledge-hungry ghosts, explore cursed curriculum modules, and emerge victorious with newfound wisdom!",
+  "type": "web-app",
+  "framework": "react",
+  "language": "typescript",
+  "createdAt": "2024-12-06T10:00:00Z",
+  "lastModified": "2024-12-11T23:15:00Z",
+  "author": {
+    "name": "Kiro AI Assistant",
+    "role": "Full Stack Developer"
+  },
+  "technologies": {
+    "frontend": ["React 19.2.0", "TypeScript 5.8.2", "Vite 6.2.0", "Tailwind CSS"],
+    "backend": ["Google Gemini AI 2.0 Flash"],
+    "libraries": ["react-markdown 10.1.0", "@google/genai 1.30.0"]
+  },
+  "features": [
+    "AI-powered curriculum generation",
+    "Interactive ghost battle system",
+    "Sequential progression with locked levels",
+    "Horizontal scrollable haunted path",
+    "10-second epic battle animations",
+    "Random jump scare system",
+    "Ambient scary music and sound effects",
+    "Souls/points tracking system",
+    "Responsive graveyard-themed UI"
+  ],
+  "status": "completed",
+  "deployment": {
+    "platform": "Vercel",
+    "buildCommand": "npm run build",
+    "outputDirectory": "dist"
+  }
+}
